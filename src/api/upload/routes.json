@@ -1,0 +1,14 @@
+{
+    "routes": [
+      {
+        "method": "POST",
+        "path": "/upload",
+        "handler": "upload.create",
+        "config": {
+          "policies": [],
+          "multipart": true
+        }
+      }
+    ]
+  }
+  

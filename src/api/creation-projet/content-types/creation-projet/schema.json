@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creation_projets",
+  "info": {
+    "singularName": "creation-projet",
+    "pluralName": "creation-projets",
+    "displayName": "Creation projet",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_projet": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "date_debut": {
+      "type": "date"
+    },
+    "date_fin": {
+      "type": "date"
+    },
+    "estimation_cout": {
+      "type": "biginteger"
+    },
+    "societe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::societe.societe"
+    },
+    "departement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::departement.departement"
+    }
+  }
+}

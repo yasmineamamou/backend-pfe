@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "factures",
+  "info": {
+    "singularName": "facture",
+    "pluralName": "factures",
+    "displayName": "facture",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "totalHT": {
+      "type": "float"
+    },
+    "TVA": {
+      "type": "float"
+    },
+    "timbre": {
+      "type": "integer"
+    },
+    "totalTTC": {
+      "type": "float"
+    },
+    "DateFacture": {
+      "type": "date"
+    }
+  }
+}

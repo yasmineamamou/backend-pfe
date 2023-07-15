@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "creation_des_taches",
+  "info": {
+    "singularName": "creation-des-tache",
+    "pluralName": "creation-des-taches",
+    "displayName": "creation-des-taches",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom_tache": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "nombre_de_tache": {
+      "type": "float"
+    },
+    "cout_par_piece": {
+      "type": "float"
+    },
+    "societe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::societe.societe"
+    },
+    "departement": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::departement.departement"
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}
